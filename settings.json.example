@@ -1,0 +1,7 @@
+{
+    "ca": "/etc/ipa/ca.crt",
+    "host": "mqtt-host.yourdomain.com",
+    "port": 8883,
+    "username": "device_username",
+    "password": "device_password"
+}
