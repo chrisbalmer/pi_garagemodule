@@ -1,7 +1,21 @@
 {
-    "ca": "/etc/ipa/ca.crt",
-    "host": "mqtt-host.yourdomain.com",
-    "port": 8883,
-    "username": "device_username",
-    "password": "device_password"
+    "client": {
+        "ca": "/etc/ipa/ca.crt",
+        "name": "pi_garage1",
+        "host": "mqtt-host.yourdomain.com",
+        "port": 8883,
+        "username": "device_username",
+        "password": "device_password"
+    },
+    "devices": [
+        {
+            "type": "cover",
+            "name": "door1",
+            "state_pin": 1,
+            "availability_topic": "homeassistant/cover/{name}/availability",
+            "state_topic": "homeassistant/cover/{name}/state",
+            "command_topic": "homeassistant/cover/{name}/set",
+            "config_topic": "homeassistant/cover/{name}/config"            
+        }
+    ]
 }

@@ -1,4 +1,4 @@
-'Module for managing a garage door.'
+'Module for managing a cover.'
 from time import sleep
 import automationhat
 
@@ -6,8 +6,8 @@ DOOR_CLOSED = 0
 DOOR_OPEN = 1
 
 
-class GarageDoor(object):
-    'Class for controlling a garage door.'
+class Cover(object):
+    'Class for controlling a cover.'
 
     def __init__(self, name, state_pin, trigger_delay=0.500):
         self.state_pin = state_pin
